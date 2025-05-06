@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web3 Tickets dApp</title>
+  <!------------------Main CSS---------------------->
+  <link rel="stylesheet" href="style.css" />
+  <!------------------Bootstrap--------------------->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+  <!-- -----------------Navbar------------------------------------- -->
+  <header class="section " style="margin-bottom: 20px;">
+    <div class="">
+      <div class="container" style="max-width: 1320px;     width: 100%; margin-right: auto; margin-left: auto;">
+        <div class="top-nav row"
+          style="display: flex; justify-content: space-between; align-items: center; width: 100%; height: 90px;">
+          <div class="container">
+            <div class="row">
+
+              <div class="logo col-4">
+                <h1>
+                  <span>Lab</span>
+                  <span class="_19">Management</span>
+                </h1>
+              </div>
+              <!-- ----------Large nav-------------- -->
+              <nav style="margin: 0px;" class="largeNAV col-8">
+                <ul>
+                  <li class="button1"><button class="btn btn-primary mainControl"><a href="#"
+                        style="text-decoration: none;" class="">Home</a></button></li>
+                  <li data-scroll-nav="0"><a href="#" id="home">Address</a></li>
+                  <li><a href="#" tabindex="0" class="mainControl">Owners</a></li>
+                  <li><a href="#" tabindex="0" class="mainControl" id="shift"></a></li>
+                  <li data-scroll-nav="5"><a href="../client/FAQs/FAQs.html">FAQ</a></li>
+                </ul>
+              </nav>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- ************************** -->
+
+  <section id="#main">
+    <video muted autoplay loop plays-inline class="back-video">
+      <source src="./images/pexels-rostislav-uzunov-5453622.mp4" type="video/mp4">
+    </video>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!-- ******************************Home******************************************* -->
+  <div class="mainView ">
+
+    <div class="container mt-5">
+      <div class="row"></div>
+    </div>
+    <div class="row justify-content-between mt-5">
+      <div class="col"></div>
+      <div class="col-10 ">
+        <div class="row">
+
+          <a href="javascript:void(0)" style="text-decoration: none;" class="col text-center">
+            <p class="checked faqs ">PCs <span class="float-right"><i class="fas fa-caret-right"></i></span></p>
+          </a>
+
+          <a href="javascript:void(0)" style="text-decoration: none;" class="col text-center">
+            <p class="unchecked faqs">Oscilliscope<span class="float-right"><i class="fas fa-caret-right"></i></span>
+            </p>
+          </a>
+          <a href="javascript:void(0)" style="text-decoration: none;" class="col text-center">
+            <p class="unchecked faqs">Function Generators<span class="float-right"><i
+                  class="fas fa-caret-right"></i></span>
+            </p>
+          </a>
+          <a href="javascript:void(0)" style="text-decoration: none;" class="col text-center">
+            <p class="unchecked faqs">Antennas<span class="float-right"><i class="fas fa-caret-right"></i></span>
+            </p>
+          </a>
+
+
+        </div>
+        <div class="row">
+          <a href="javascript:void(0)" style="text-decoration: none;" class="text-center">
+            <li class="unchecked faqs">History<span class="float-right"><i class="fas fa-caret-right"></i></span>
+            </li>
+          </a>
+        </div>
+        <div class="row">
+          <div id="test">
+            <div class="row">
+              <p class="col text-center">Remaining PCs = ---</p>
+              <p class="col text-center">Remaining Osciloscopes = ---</p>
+              <p class="col text-center">Remaining Function Generators = ---</p>
+              <p class="col text-center">Remaining Anetennas = ---</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+    <!-- ***************************************************************** -->
+
+
+    <div class="divFAQ">
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="tickets">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divFAQ none" style="margin-left: 15px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="oscilloscope">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divFAQ none" style="margin-left: 15px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="function">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divFAQ none" style="margin-left: 15px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="antenna">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divFAQ none" style="margin-left: 15px;">
+      <div class="container">
+
+        <div class="row text-center d-flex justify-content-center">
+          <div id="history" class="col-8">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--****************************Owners START*************************************-->
+  <div class="mainView none" style="margin-top: 7%;">
+
+    <!-- ******************************Owners Buttons******************************************* -->
+
+    <div class="row justify-content-between">
+      <div class="col"></div>
+      <div class="col-10 ">
+        <div class="row">
+
+          <a href="javascript:void(0)" style="text-decoration: none;" class="col text-center">
+            <p class="checked ownButton ">PCs <span class="float-right"><i class="fas fa-caret-right"></i></span>
+            </p>
+          </a>
+
+          <a href="javascript:void(0)" style="text-decoration: none;" class="col text-center">
+            <p class="unchecked ownButton">Oscilliscope<span class="float-right"><i
+                  class="fas fa-caret-right"></i></span>
+            </p>
+          </a>
+          <a href="javascript:void(0)" style="text-decoration: none;" class="col text-center">
+            <p class="unchecked ownButton">Function Generators<span class="float-right"><i
+                  class="fas fa-caret-right"></i></span>
+            </p>
+          </a>
+          <a href="javascript:void(0)" style="text-decoration: none;" class="col text-center">
+            <p class="unchecked ownButton">Antennas<span class="float-right"><i class="fas fa-caret-right"></i></span>
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+
+    <!-- ***************************************************************** -->
+    <!--***************************Own List********************************-->
+    <div class="ownList">
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="pcList">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="ownList none" style="margin-left: 15px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="oscList">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ownList none" style="margin-left: 15px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="funList">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ownList none" style="margin-left: 15px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="antList">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--********-->
+  </div>
+
+
+  <!--****************************MyDevices/ADMIN*************************************-->
+  <div class="mainView none" style="margin-top: 7%;">
+
+    <!-- ---------------------------Devices Buttons--------------------------------- -->
+
+    <div class="row justify-content-between">
+      <div class="col"></div>
+      <div class="col-10 ">
+        <div class="row">
+
+          <a href="javascript:void(0)" style="text-decoration: none;" class="col text-center">
+            <p class="checked myDevicesButton ">My PCs <span class="float-right"><i
+                  class="fas fa-caret-right"></i></span>
+            </p>
+          </a>
+
+          <a href="javascript:void(0)" style="text-decoration: none;" class="col text-center">
+            <p class="unchecked myDevicesButton">My Oscilliscope<span class="float-right"><i
+                  class="fas fa-caret-right"></i></span>
+            </p>
+          </a>
+          <a href="javascript:void(0)" style="text-decoration: none;" class="col text-center">
+            <p class="unchecked myDevicesButton">My Function Generators<span class="float-right"><i
+                  class="fas fa-caret-right"></i></span>
+            </p>
+          </a>
+          <a href="javascript:void(0)" style="text-decoration: none;" class="col text-center">
+            <p class="unchecked myDevicesButton">Antennas<span class="float-right"><i
+                  class="fas fa-caret-right"></i></span>
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+    <!-- ---------------------------Devices List ----------------------------------- -->
+
+    <div class="deviceList">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="myPCs">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus animi sint eveniet maiores deserunt
+              iusto eius illo eum quae voluptatibus suscipit tenetur dolores doloribus quam, ducimus nisi iste
+              voluptatum? Error.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deviceList none">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="myOscilloscopes">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deviceList none">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="myFunctions">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis est a molestias praesentium ipsa
+              accusamus, earum adipisci quis corrupti quibusdam dignissimos animi repellat repudiandae, illo porro.
+              Numquam alias laboriosam ullam?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deviceList none">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="myAntennas">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- **************************************Footer*************************************************** -->
+
+  <footer class="footer py-5" id="footer" style="margin-top: 90px;">
+    <div class="container my-4 ">
+      <div class="row text-white justify-content-between">
+        <div class="col-4 text-left">
+          <h2 class=" title mb-4">Supply<span style="color: #4b6690">Chain</span>
+          </h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi aut saepe voluptatum hic. Provident
+            vel
+            ad, facere molestias nulla blanditiis quae, quasi hic quos praesentium minus aut incidunt nemo impedit! Lo
+          </p>
+          <p></p>
+          <a href=""><i></i></a>
+          <a href=""><i></i></a>
+          <a href=""><i></i></a>
+        </div>
+        <div class="col-12 col-lg-8 ">
+          <div class="row text-left">
+            <div class="col-12 col-lg-4 link">
+              <h6 class="font-weight-bolder links">Quick Links</h6>
+              <a href="">What is BlockChain</a> <br>
+              <a href="">What is BlockChain</a> <br>
+              <a href="">What is BlockChain</a> <br>
+              <a href="">What is BlockChain</a> <br>
+              <a href="">What is BlockChain</a> <br>
+            </div>
+            <div class="col-12 col-lg-4">
+              <h6 class="font-weight-bolder links">LinkedIn Links</h6>
+              <a href="https://www.linkedin.com/in/omar-amin-725890154/">Omar Amin</a> <br>
+              <a href="">Ahmed Hossam</a> <br>
+              <a href="">Sayed Mohamed</a> <br>
+              <a href="">Mohamed Amr</a> <br>
+              <a href="">Abdelrahman Adel</a> <br>
+              <a href="">Abdelrahman Mohamed</a> <br>
+            </div>
+            <div class="col-12 col-lg-4">
+              <h6 class="font-weight-bolder links">GitHub Link</h6>
+              <a href="https://github.com/omaramin0099">Omar Amin</a> <br>
+              <a href="">Ahmed Hossam</a> <br>
+              <a href="">Sayed Mohamed</a> <br>
+              <a href="">Mohamed Amr</a> <br>
+              <a href="">Abdelrahman Adel</a> <br>
+              <a href="">Abdelrahman Mohamed</a> <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <p>Disclaimer: We hope you find the information presented on this website useful. This website is presented
+            as
+            a graduation project for MUST university
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- -----------jQuery------------------------- -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- ---------------Main JS--------------------- -->
+  <script type="module" src="index.js"></script>
+
+  <!-- -----------Bootstrap JS------------------- -->
+  <script type="module" src="../client/JS/bootstrap.bundle.min.js"></script>
+  <script type="module" src="../client/JS/popper.min.js"></script>
+</body>
+
+</html>
